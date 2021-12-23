@@ -20,7 +20,7 @@
             Hello! Welcome to Darasya's Wedding Planner.
             We provide the wedding service you have been looking for.
             Do have a look at our website and do contact us if
-            you have any question. Thank you. 
+            you have any question. Thank you.
         </div></br>
     </div></br>
 
@@ -43,36 +43,6 @@
         </tr>
     </table>
 
-    <center>
-        <div class="slideshow-container">
-
-            <div class="mySlides fade">
-                <div class="numbertext">1 / 3</div>
-                <img src="img/decoration.jpeg" style="width:50%">
-                <div class="text">DECORATION</div>
-            </div>
-
-            <div class="mySlides fade">
-                <div class="numbertext">2 / 3</div>
-                <img src="img/makeup.jpg" style="width:50%">
-                <div class="text">BEAUTY</div>
-            </div>
-
-            <div class="mySlides fade">
-                <div class="numbertext">3 / 3</div>
-                <img src="img/photography.jpg" style="width:50%">
-                <div class="text">PHOTOGRAPHY</div>
-            </div>
-
-        </div>
-        <br>
-
-        <div style="text-align:center">
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-        </div>
-    </center>
     <center>
         <form method="post" id="form" action="result.php">
             <div class="container">
@@ -97,14 +67,35 @@
 
                 <br><br>
 
-                Service Provided <br><br>
+                Decoration RM500 <br><br>
 
-                <select class=service name="service" id="service">
-                    <option value="0">Select services:</option>
-                    <option value="DECORATION">Decoration</option>
-                    <option value="BEAUTICION">Beauticion</option>
-                    <option value="PHOTOGRAPHY"> Photography</option>
-                    <option value="COSTUME">Costume</option>
+                <select class=deco name="deco" id="deco">
+                    <option value="0">ADD ON:</option>
+                    <option value="flower">Flower RM120</option>
+                    <option value="balloon">Balloon RM50</option>
+                    <option value="bridal">Bridal RM200</option>
+                </select>
+                <br> <br>
+
+                Beautician RM1000 <br><br>
+
+                <select class=beauty name="beauty" id="beauty">
+                    <option value="0">ADD ON:</option>
+                    <option value="make up">Makeup RM250</option>
+                    <option value="hair">Hair RM300</option>
+                    <option value="henna">Henna RM100</option>
+                    
+                </select>
+                <br> <br>
+
+                Photography RM500 <br><br>
+
+                <select class=photo name="photo" id="photo">
+                    <option value="0">ADD ON:</option>
+                    <option value="video">Video RM100</option>
+                    <option value="candid">Candid RM100</option>
+                    <option value="formal"> Formal RM50</option>
+                    
                 </select>
                 <br> <br>
             </div>
@@ -112,31 +103,6 @@
             <button type="reset" class="resetbtn">Reset</button>
         </form>
     </center>
-
-    <script>
-        var slideIndex = 0;
-        showSlides();
-
-        function showSlides() {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("dot");
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slideIndex++;
-            if (slideIndex > slides.length) {
-                slideIndex = 1
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-            setTimeout(showSlides, 2000); // Change image every 2 seconds
-        }
-    </script>
-
     <div style="background-color:#e5e5e5;text-align:center;padding:10px;margin-top:7px;">© CREATE BY DARASYA</div>
 
 </body>

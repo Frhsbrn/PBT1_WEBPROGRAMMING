@@ -1,9 +1,11 @@
 <?php
 session_start();
-$name = $_SESSION['name'];
-$phoneNo = $_SESSION['phoneNo'];
-$email = $_SESSION['email'];
-$service = $_SESSION['service'];
+$name = $_POST['name'];
+$phoneNo = $_POST['phoneNo'];
+$email = $_POST['email'];
+$deco = $_POST['deco'];
+$beauty = $_POST['beauty'];
+$photo = $_POST['photo'];
 ?>
 
 
@@ -20,7 +22,10 @@ $service = $_SESSION['service'];
     <h3>NAME :  <?php echo $name; ?> </h3>
     <h3>PHONE NO :  <?php echo $phoneNo; ?> 
     <h3>EMAIL :  <?php echo $email; ?>
-    <h3>SERVICES :  <?php echo $service; ?>
+    <h3>DECORATION :  <?php echo $deco; ?>
+    <h3>BEAUTICIAN :  <?php echo $beauty; ?>
+    <h3>PHOTOGRAPHY :  <?php echo $photo; ?>
+
 </body>
 </html>
 

@@ -10,33 +10,38 @@
 
     <div style="background-color:#e5e5e5;padding:15px;text-align:center;">
         <h1>DARASYA WEDDING PLANNER</h1>
-        
+
     </div>
 
     <div style="overflow:auto">
-        <div class="menu">
-            <a href="#home">HOME</a>
-            <a href="#service">SERVICE</a>
-            <a href="#form">FORM DETAIL</a>
-            <a href="#contactus">CONTACT US</a>
-        </div>
 
         <div class="main">
             <h2>DARASYA WEDDING PLANNER</h2>
-            Hello! Welcome to Darasya's Wedding Planner. 
-        We provide the wedding service you have been looking for.
-        Do have a look at our website and do contact us if 
-        you have any question. Thank you.
-        </div>
+            Hello! Welcome to Darasya's Wedding Planner.
+            We provide the wedding service you have been looking for.
+            Do have a look at our website and do contact us if
+            you have any question. Thank you. 
+        </div></br>
+    </div></br>
 
-        <div class="right">
-            <h2>About</h2>
-            Darasya's services have been work since 2020.
-            We provide a good service to customer.
-            We receive a lot of good feedback.
-            For any addition service, we charg
-        </div>
-    </div>
+    <table>
+        <tr>
+            <th>OUR SERVICE</th>
+            <th>PER PACKAGE</th>
+        </tr>
+        <tr>
+            <td>PHOTOGRAPHY</td>
+            <td>RM500</td>
+        </tr>
+        <tr>
+            <td>DECORATION</td>
+            <td>RM1000</td>
+        </tr>
+        <tr>
+            <td>BEAUTICIAN</td>
+            <td>RM500</td>
+        </tr>
+    </table>
 
     <center>
         <div class="slideshow-container">
@@ -69,7 +74,7 @@
         </div>
     </center>
     <center>
-        <form method="post" id="form" action="function.php">
+        <form method="post" id="form" action="result.php">
             <div class="container">
 
                 Name :
@@ -131,24 +136,6 @@
             setTimeout(showSlides, 2000); // Change image every 2 seconds
         }
     </script>
-
-
-    <h3>Contact Us</h3>
-
-    <div class="container" id="contactus">
-        <form >
-            <label for="fname">First Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="Your name..">
-
-            <label for="lname">Last Name</label>
-            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-            <label for="subject">Comment</label>
-            <textarea id="subject" name="comment" placeholder="Write something.." style="height:200px"></textarea>
-
-            <input type="submit" value="Submit">
-        </form>
-    </div>
 
     <div style="background-color:#e5e5e5;text-align:center;padding:10px;margin-top:7px;">© CREATE BY DARASYA</div>
 
